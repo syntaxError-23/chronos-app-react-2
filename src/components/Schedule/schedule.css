@@ -107,6 +107,11 @@ div.task-content{
     margin: auto 0;
 }
 
+p#no-tasks-msg{
+    text-align: center;
+    margin-top: 10px;
+}
+
 
 /* ******************** Error message styles ******************** */
 
