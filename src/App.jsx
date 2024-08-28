@@ -12,7 +12,7 @@ function App() {
   return (
     <>
         <Modal />
-        <Router basename="/chronos-app-react">
+        <Router basename="/chronos-app-react-2">
           <Switch> 
               <Route exact path="/" component={LandingPage} />
               <Route path="/schedule" component={SchedulePage} />            
