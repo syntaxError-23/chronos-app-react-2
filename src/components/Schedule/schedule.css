@@ -1,0 +1,290 @@
+/* ******************** Schedule content styles ******************** */
+div#schedule-content{
+    display: flex;
+    justify-content: center;
+}
+
+/* ******************** Schedule table styles ******************** */
+
+.grid-parent{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(24, 6fr) ;
+    width: 55vw;
+    height: 70vh;
+    border-radius: 6px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.grid-of-tasks{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(144, 1fr);
+    height: 100%;
+    width: 100%;
+    grid-row: 1/span 24;
+    grid-column: 2;
+}
+
+.time-square{
+    padding: 10px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: none;
+    border-right: solid rgb(228, 228, 228) 1px;
+    border-bottom: solid rgb(228, 228, 228) 1px;;
+    background-color: rgba(123, 52, 161, 0.7) !important;
+    height: 20vh;
+}
+
+.time-square:nth-child(1){
+    border-top: 0;
+}
+
+.time-square:nth-child(24){
+    border-bottom: 0;
+}
+
+
+.task{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 95%;
+    height: 99%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.task p{
+    font-size: 0.8em;
+    margin: 0;
+}
+
+div.task-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9em;
+}
+
+div.task-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    opacity: 0%;
+}
+
+div.task-content-container:hover div.task-buttons{
+    opacity: 100%;
+}
+
+div.task-buttons .close-btn{
+    font-size: 0.8em;
+    position: relative;
+    bottom: 0.5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+div.task-buttons .edit-btn{
+    margin-left: 5px;
+}
+
+div.task-content{
+    font-size:0.95em;
+    text-align: center;
+    margin: auto 0;
+}
+
+
+/* ******************** Error message styles ******************** */
+
+div#error-wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+/* ******************** new task modal styles ******************** */
+
+div#new-task-container{
+    width: 35vw;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+    margin: 0 auto;
+    overflow: auto;
+}
+
+p#new-task-text{
+    font-weight: 700;
+}
+
+.schedule-input-label{
+    margin-right: 10px;
+    width: 20%;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+.all-forms{
+    margin-right: 10px;
+}
+
+div.schedule-dropdowns{
+    display: flex;
+    flex-direction: column;
+}
+
+div#new-task-form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.new-task-div input{
+    width: 80%;
+}
+
+#new-task-input{
+    padding: 7px 9px;
+    font-size: 0.7em;
+}
+
+div.new-task-div input:focus{
+    box-shadow: 0 0 3px 0.25rem rgba(174, 86, 246, 0.25);
+}
+
+div.dropdown-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.dropdown-container select{
+    font-weight: 600;
+    width: 80%;
+    font-size: 0.6em;
+}
+
+
+
+/* *************** Colour picker styles *************** */
+
+div#colour-picker-container{
+    height: 35%;
+}
+
+div#colour-picker{
+    height: 90%;
+}
+
+p#colour-picker-title{
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+div.cp-row{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+div.colour-container{
+    width: 25%;
+    border: 0 solid rgb(199, 239, 255);
+    transition: all 0.05s ease-in;
+}
+
+div.colour-container:hover, div.colour-container:focus{
+    border: 1px solid rgb(199, 239, 255);
+}
+
+
+
+
+
+
+/* *************** Row 1*************** */
+
+
+div.cp-row:nth-child(1) .colour-container:nth-child(1){
+    background-color: #57d3ac;
+}
+div.cp-row:nth-child(1) .colour-container:nth-child(2){
+    background-color: #58d7d8;
+}
+
+div.cp-row:nth-child(1) .colour-container:nth-child(3){
+    background-color: #8da0cb;
+}
+
+div.cp-row:nth-child(1) .colour-container:nth-child(4){
+    background-color: #5461d8;
+}
+
+/* *************** Row 2 *************** */
+
+div.cp-row:nth-child(2) .colour-container:nth-child(1){
+    background-color: #6024c1;
+}
+div.cp-row:nth-child(2) .colour-container:nth-child(2){
+    background-color: #e7af46;
+}
+
+div.cp-row:nth-child(2) .colour-container:nth-child(3){
+    background-color: #c48255;
+}
+
+div.cp-row:nth-child(2) .colour-container:nth-child(4){
+    background-color: #b33c3c;
+}
+
+/* ********************************************* Media queries ********************************************* */
+
+/* *************** 320px - 768px *************** */
+
+@media (min-width: 1px) and (max-width: 768px) {
+    
+    /* *************** Page styles *************** */
+
+    #schedule-content{
+        flex-direction: column;
+    }
+
+    /* *************** Overlapping styles *************** */
+
+    div#new-task-container, div.grid-parent{
+        width: 90%;
+    }
+
+    /* *************** Schedule grid styles *************** */
+    div.grid-parent{
+        margin-bottom: 10px;
+        height: 95vh;
+    }
+
+    /* *************** New task creator styles *************** */
+    div#new-task-container{
+        margin: 10px auto;
+    }
+
+    div.dropdown-container select{
+        font-size: 0.5em;
+    }
+
+  }
