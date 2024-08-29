@@ -90,3 +90,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Feel free to contribute, report bugs, or suggest features!
+
+---
+
+Want to checkout a live demo? [click here](https://syntaxerror-23.github.io/chronos-app-react-2/) 
