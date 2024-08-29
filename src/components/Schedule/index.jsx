@@ -257,39 +257,6 @@ function Schedule() {
 
                     <div className="grid-of-tasks">
 
-                        {/* {tasks.map((task, index) => {
-
-                            let totalMins = 0; //Variable that stores total Minsfor each task
-
-                            //calculates differences in start and end hours/mins
-                            const taskHourDiff = parseInt(task.endHour) - parseInt(task.startHour);
-                            const taskMinDiff = parseInt(task.endMin) - parseInt(task.startMin);
-
-                            //calculates total Mins
-                            totalMins = (taskHourDiff * 60) + taskMinDiff;
-                            console.log(`TOTAL MINS: ${totalMins}`);
-
-                            // Calculate the duration of the task in minutes
-                            const taskDuration = (parseInt(task.endHour) * 60 + parseInt(task.endMin)) - (parseInt(task.startHour) * 60 + parseInt(task.startMin));
-
-                            return (
-                                <div className="task" key={index} data-listid={index} 
-                                style={{gridRow: `${((parseInt(task.startHour) * 6 + parseInt(task.startMin)/10) + 1)}/span ${totalMins/10}`,
-                                zIndex: 2, backgroundColor: task.colour}}> 
-                                    <div className="task-content-container">
-                                        <div className="task-buttons">
-                                            <p className="edit-btn">Edit</p>
-                                            <span className="close-btn" onClick={handleDelete}>x</span>
-                                        </div>
-                                        <div className="task-content">
-                                            <p className="task-desc">{task.desc}</p> 
-                                            <p className="task-time">{task.start} - {task.end}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            )
-                        })} */}
-
 
                         {tasks && tasks.length > 0 ? (
 
